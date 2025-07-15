@@ -1,0 +1,309 @@
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgb(240, 240, 237);
+}
+#container {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding-top: 50px;
+}
+
+#create-account {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 5, 65);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#container > h1 {
+  text-align: center;
+  color: #3e3e40;
+}
+
+#accounts {
+  width: 90%;
+  height: max-content;
+  /* background-color: aliceblue; */
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.account {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #8a8abd;
+  padding: 6px;
+}
+
+.account > p {
+  display: inline-block;
+  margin-left: 16px;
+  margin-top: 6px;
+}
+
+.account > div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.account > div > span {
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.account > span {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.account > span > button {
+  margin-right: 30px;
+  padding: 4px 8px;
+  background-color: rgb(5, 5, 65);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#blur-box {
+  background-color: rgba(72, 70, 70, 0.506);
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  position: absolute;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#create-acc-form {
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #b0afaf;
+  position: relative;
+  display: none;
+}
+
+#create-acc-form > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#create-acc-form > div > label {
+  display: block;
+  font-size: 18px;
+  color: #adaaaa;
+}
+
+#create-acc-form > div > input {
+  margin-top: 2px;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+#create-acc-btn,
+#add-amt-btn,.cust-btn {
+  width: max-content;
+  padding: 4px 8px;
+  background-color: #4640e6;
+  margin-top: 16px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+#cancel-create-acc,
+#add-amount-cancel,#exp-amount-cancel,#trp-amount-cancel {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  cursor: pointer;
+}
+
+#add-amount-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #b0afaf;
+  position: relative;
+  display: none;
+}
+
+#add-amount-box > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#add-amount-box > div > label {
+  display: block;
+  font-size: 18px;
+  color: #adaaaa;
+}
+
+#add-amount-box > div > input {
+  margin-top: 2px;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+/* Expense Amount Box */
+#exp-amount-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #b0afaf;
+  position: relative;
+  display: none;
+}
+
+#exp-amount-box > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#exp-amount-box > div > label {
+  display: block;
+  font-size: 18px;
+  color: #adaaaa;
+}
+
+#exp-amount-box > div > input {
+  margin-top: 2px;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+
+/* Transfer Amount Box */
+#trp-amount-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 0 10px #b0afaf;
+    position: relative;
+    display: none;
+  }
+  
+  #trp-amount-box > div {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  #trp-amount-box > div > label {
+    display: block;
+    font-size: 18px;
+    color: #adaaaa;
+  }
+  
+  #trp-amount-box > div > input {
+    margin-top: 2px;
+    width: 100%;
+    padding: 4px 8px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Extra css */
+
+/* Styling for main container */
+#main-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for individual boxes */
+#main-box > div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+/* Specific styles for left, right, and total sections */
+#left {
+  border: 2px solid #f05454;
+  color: #f05454;
+}
+
+#right {
+  border: 2px solid #3bb78f;
+  color: #3bb78f;
+}
+
+#total {
+  border: 2px solid #4361ee;
+  color: #4361ee;
+  font-weight: bold;
+}
+
+/* Hover effect for individual boxes */
+#main-box > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for spans inside boxes */
+#main-box > div span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}

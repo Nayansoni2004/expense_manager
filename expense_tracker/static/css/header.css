@@ -1,0 +1,93 @@
+#navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(6, 89, 122);
+}
+
+
+#logo > h1{
+    color: #fff;
+    font-size: 2.4rem;
+    text-decoration: underline;
+}
+
+#nav-options{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav-options  a{
+    font-size: 1.2rem;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+#nav-options > a:hover{
+    transform: scale(1.03);
+    color: rgb(197, 222, 245);
+}
+
+.nav-btns{
+    border: 1px solid blueviolet;
+    background-color: rgb(64, 64, 239);
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #fff;
+}
+
+#nav-select{
+    /* background-color: transparent; */
+    padding: 3px 6px;
+    background-color:  rgb(64, 64, 239);
+}
+
+#user-op-box{
+    width: 170px;
+    height: 140px;
+    background-color: #fff;
+    position: relative;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    padding-top: 50px;
+    gap: 10px;
+    z-index: 10;
+    display: none;
+}
+
+#user-op-box > a{
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(125, 187, 240);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(125, 187, 240);
+}
+
+#nav-cancel{
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#user-option{
+    color: #fff;
+    cursor: pointer;
+}

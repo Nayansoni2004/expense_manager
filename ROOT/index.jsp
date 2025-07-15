@@ -1,0 +1,1 @@
+<% response.sendRedirect("expense_tracker/index.jsp"); %>
